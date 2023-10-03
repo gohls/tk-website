@@ -1,5 +1,6 @@
 export const poems = [
   {
+    author: "Tom Kuhn",
     title: "If From this Soulful Heart",
     poemLines: [
       "If from this soulful heart one little rose",
@@ -17,6 +18,7 @@ export const poems = [
     ],
   },
   {
+    author: "Tom Kuhn",
     title: "A Rose, The Last",
     poemLines: [
       "A rose, the Last, is warmed by sun's soft rays",
@@ -36,6 +38,7 @@ export const poems = [
     ],
   },
   {
+    author: "Tom Kuhn",
     title: "O Rose of Grace",
     poemLines: [
       "O rose of Grace my eyes have faintly traced",
