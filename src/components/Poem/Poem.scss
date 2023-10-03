@@ -29,6 +29,11 @@ $large-screen: 1200px;
 
 .poem-title {
   text-align: center;
+  // @include responsive-font-size(16px, 20px);
+}
+
+.poem-author {
+  text-align: center;
   padding-bottom: 25px;
   // @include responsive-font-size(16px, 20px);
 }
