@@ -5,21 +5,22 @@ interface PoemProps {
   author: string;
   title: string;
   poem: string[];
+  key: number;
 }
 
-const Poem = ({ author, title, poem }: PoemProps) => {
+const Poem = ({ author, title, poem, key }: PoemProps) => {
   return (
-    <div className='poem-container'>
-      <div className='poem-text'>
-        <div className='poem-title'>{title}</div>
-        <div className='poem-author'>{author}</div>
-        <>
+    <>
+      <div className='poem-container'>
+        <div className='poem-text'>
+          <div className='poem-title'>{title}</div>
+          <div className='poem-author'>{author}</div>
           {poem.map((line, index) => {
             return <p key={index}>{line}</p>;
           })}
-        </>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

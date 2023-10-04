@@ -22,26 +22,26 @@ $large-screen: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Make the container take up the full viewport height */
+  // full viewport height
+  height: 100vh; 
   font-family: 'Times New Roman', serif;
-  @include responsive-font-size(16px, 20px);
+  // responsive font size
+  @include responsive-font-size(16px, 20px);   
 }
 
 .poem-title {
   text-align: center;
-  // @include responsive-font-size(16px, 20px);
+  @include responsive-font-size(18px, 22px); 
 }
 
 .poem-author {
   text-align: center;
-  padding-bottom: 25px;
-  // @include responsive-font-size(16px, 20px);
+  padding-bottom: 5%;
+  opacity: 50%;
+  @include responsive-font-size(16px, 20px); 
 }
-// Apply the responsive font size to your text elements
+
 .poem-text {
-  text-align: left; /* Align the text on the left */
-  // max-width: 600px; /* Limit the maximum width of the poem */
-  
-  // Other styles can be added here
+  text-align: left;
 }
 
