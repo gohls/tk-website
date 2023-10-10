@@ -1,5 +1,5 @@
 export const preface = {
-  title: "Looking at the Rose Through World-Colored Glasses",
+  header: "Looking at the Rose Through World-Colored Glasses",
   intro: [
     "This title is from a line in Lawrence Ferlinghetti's book,",
     "Poetry as Insurgent Art.",
