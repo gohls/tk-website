@@ -1,52 +1,52 @@
-// Define your base font size
-$base-font-size: 14px;
-// Define breakpoints for different screen sizes
-$small-screen: 768px;
-$medium-screen: 1024px;
-$large-screen: 1200px;
+// // Define your base font size
+// $base-font-size: 14px;
+// // Define breakpoints for different screen sizes
+// $small-screen: 768px;
+// $medium-screen: 1024px;
+// $large-screen: 1200px;
 
-// Define a mixin to adjust font size based on screen width
-@mixin responsive-font-size($min-font-size, $max-font-size) {
-  font-size: $min-font-size;
+// // Define a mixin to adjust font size based on screen width
+// @mixin responsive-font-size($min-font-size, $max-font-size) {
+//   font-size: $min-font-size;
   
-  @media screen and (min-width: $small-screen) {
-    font-size: calc(#{$min-font-size} + (#{$max-font-size} - #{$min-font-size}) * (100vw - #{$small-screen}) / (#{$large-screen} - #{$small-screen}));
-  }
+//   @media screen and (min-width: $small-screen) {
+//     font-size: calc(#{$min-font-size} + (#{$max-font-size} - #{$min-font-size}) * (100vw - #{$small-screen}) / (#{$large-screen} - #{$small-screen}));
+//   }
   
-  @media screen and (min-width: $medium-screen) {
-    font-size: $max-font-size;
-  }
-}
+//   @media screen and (min-width: $medium-screen) {
+//     font-size: $max-font-size;
+//   }
+// }
 
 .preface-container {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   align-items: center;
   // full viewport height
   height: 100vh; 
   // font-family: Verdana, sans-serif;
   // responsive font size
-  @include responsive-font-size(14px, 18px); 
+  // @include responsive-font-size(14px, 18px); 
   
   & p {
     line-height: 2;
   }
 }
 
-.preface-title {
-  padding-bottom: 15%;
-  padding-top: 15%;
-  text-align: left;
-  @include responsive-font-size(14px, 18px); 
-}
+// .preface-title {
+//   padding-bottom: 15%;
+//   padding-top: 15%;
+//   text-align: left;
+//   @include responsive-font-size(14px, 18px); 
+// }
 
-.preface-copyright {
-  padding-top: 15%;
-  padding-bottom: 15%;
-  text-align: left;
-  @include responsive-font-size(14px, 18px); 
-}
+// .preface-copyright {
+//   padding-top: 15%;
+//   padding-bottom: 15%;
+//   text-align: left;
+//   @include responsive-font-size(14px, 18px); 
+// }
 
-.preface-text {
-  text-align: left;
-}
+// .preface-text {
+//   text-align: left;
+// }
