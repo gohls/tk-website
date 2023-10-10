@@ -1,5 +1,7 @@
 import React from "react";
 import "./Poem.scss";
+import { Typography } from "@mui/material";
+import Page from "../common/Page";
 
 interface PoemProps {
   author: string;
@@ -11,15 +13,23 @@ interface PoemProps {
 const Poem = ({ author, title, poem, key }: PoemProps) => {
   return (
     <>
-      <div className='poem-container'>
+      <Page>
         <div className='poem-text'>
-          <div className='poem-title'>{title}</div>
-          <div className='poem-author'>{author}</div>
+          <Typography variant='h4' align='center'>
+            {title === "(no-title)" ? "" : title}
+          </Typography>
+          <Typography variant='h5' align='center'>
+            {author}
+          </Typography>
           {poem.map((line, index) => {
-            return <p key={index}>{line}</p>;
+            return (
+              <Typography paragraph key={index}>
+                {line}
+              </Typography>
+            );
           })}
         </div>
-      </div>
+      </Page>
     </>
   );
 };
