@@ -30,8 +30,6 @@ import {
 } from "@mui/material";
 import Page from "./components/common/Page";
 
-// const calcFont()
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -134,7 +132,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
-        <div className='App'>
+        <div className="App">
           <MenuBar />
           <Grid container>
             <Grid
@@ -148,7 +146,7 @@ function App() {
               }}
             >
               <Box
-                className='side-nav'
+                className="side-nav"
                 // hide on screens smaller than md
                 sx={{
                   display: { xs: "none", md: "block" },
@@ -161,14 +159,14 @@ function App() {
                   <a
                     onClick={(e) => onPoemLinkClick(e)}
                     href={"#section-cover"}
-                    className='poem-link'
+                    className="poem-link"
                   >
                     <div data-to-scrollspy-id={"section-cover"}>{"Cover"}</div>
                   </a>
                   <a
                     onClick={(e) => onPoemLinkClick(e)}
                     href={"#section-preface"}
-                    className='poem-link'
+                    className="poem-link"
                   >
                     <div data-to-scrollspy-id={"section-preface"}>
                       {"Preface"}
@@ -179,7 +177,7 @@ function App() {
                       <a
                         onClick={(e) => onPoemLinkClick(e)}
                         href={`#poem-${poemTitleEncoder(poem.title)}`}
-                        className='poem-link'
+                        className="poem-link"
                       >
                         <div
                           data-to-scrollspy-id={`poem-${poemTitleEncoder(
@@ -199,11 +197,11 @@ function App() {
                 <ScrollSpy useBoxMethod={false}>
                   <div id={"section-cover"}>
                     <Cover />
-                    <Divider component='div' role='presentation' />
+                    <Divider component="div" role="presentation" />
                   </div>
                   <div id={"section-preface"}>
                     <Preface preface={preface} />
-                    <Divider component='div' role='presentation' />
+                    <Divider component="div" role="presentation" />
                   </div>
                   {poems.map((poem, index) => (
                     <div id={`poem-${poemTitleEncoder(poem.title)}`}>
@@ -214,7 +212,7 @@ function App() {
                         poem={poem.poemLines}
                       />
                       {index < poems.length && (
-                        <Divider component='div' role='presentation' />
+                        <Divider component="div" role="presentation" />
                       )}
                     </div>
                   ))}
