@@ -48,3 +48,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## TODO
 
 - [ ] Refactor main page to list all work
+- [ ] Use template mobile/web template for main
