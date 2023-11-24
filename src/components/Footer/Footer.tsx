@@ -3,17 +3,17 @@ import React from "react";
 
 function Footer() {
   return (
-    <Container maxWidth='lg'>
+    <Container maxWidth="lg">
       <Box
         sx={{
           flexGrow: 1,
           justifyContent: "center",
           display: "flex",
-          // mb: 2,
+          // mt: 2,
           paddingTop: 1,
         }}
       >
-        <Typography variant='caption' color='initial'>
+        <Typography variant="caption" color="initial">
           ©2023 Tom Kuhn. All Rights Reserved.
         </Typography>
       </Box>
@@ -25,8 +25,9 @@ function Footer() {
           my: 1,
         }}
       >
-        <Typography variant='caption' color='initial'>
-          <a>Website created by Simon Gohl</a>
+        <Typography variant="caption" color="initial">
+          Website created by{" "}
+          <a href="https://www.linkedin.com/in/sagohl"> Simon Gohl</a>
         </Typography>
       </Box>
     </Container>
