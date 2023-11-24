@@ -9,16 +9,15 @@
   font-weight: 600;
   padding-right: 10px;
   color: black;
-    opacity: 100% !important;
+  opacity: 100% !important;
 }
-
 
 a.poem-link {
   color: black;
   // opacity: 50%;
   text-decoration: none;
   &:hover {
-    color: blue
+    color: blue;
   }
 }
 
@@ -36,9 +35,6 @@ a.poem-link {
   text-align: right;
 }
 
-
-
-
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -54,16 +50,4 @@ a.poem-link {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-} */
-
-
-
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 } */
