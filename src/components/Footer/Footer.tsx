@@ -27,7 +27,14 @@ function Footer() {
       >
         <Typography variant="caption" color="initial">
           Website created by{" "}
-          <a href="https://www.linkedin.com/in/sagohl"> Simon Gohl</a>
+          <a
+            href="https://www.linkedin.com/in/sagohl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Simon Gohl
+          </a>
         </Typography>
       </Box>
     </Container>
