@@ -47,9 +47,9 @@ const theme = createTheme({
         paragraph: {
           // Some CSS
           fontFamily: "Times New Roman",
-          fontSize: "1.2rem",
+          fontSize: "1.1rem",
           "@media (max-width:600px)": {
-            fontSize: ".9rem",
+            fontSize: "1rem",
           },
           "@media (max-width:470px)": {
             fontSize: ".8rem",
@@ -69,7 +69,7 @@ const theme = createTheme({
           fontFamily: "Times New Roman",
           fontSize: "1.3rem",
           "@media (max-width:600px)": {
-            fontSize: "1rem",
+            fontSize: "1.2rem",
           },
           "@media (max-width:470px)": {
             fontSize: ".9rem",
@@ -88,7 +88,7 @@ const theme = createTheme({
           opacity: "50%",
           fontSize: "1.1rem",
           "@media (max-width:600px)": {
-            fontSize: ".8rem",
+            fontSize: ".9rem",
           },
           "@media (max-width:470px)": {
             fontSize: ".7rem",
@@ -98,6 +98,23 @@ const theme = createTheme({
           },
           "@media (max-width:370px)": {
             fontSize: ".5rem",
+          },
+        },
+        h6: {
+          // Some CSS
+          // fontFamily: "Times New Roman",
+          fontSize: "1rem",
+          "@media (max-width:600px)": {
+            fontSize: "1rem",
+          },
+          "@media (max-width:470px)": {
+            fontSize: ".8rem",
+          },
+          "@media (max-width:420px)": {
+            fontSize: ".7rem",
+          },
+          "@media (max-width:370px)": {
+            fontSize: ".6rem",
           },
         },
       },
@@ -134,7 +151,7 @@ function App() {
       <CssBaseline>
         <div className="App">
           <MenuBar />
-          <Grid container>
+          <Grid container width={{ width: "100%" }}>
             <Grid
               xs={3}
               sx={{
@@ -192,7 +209,7 @@ function App() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xl={6} lg>
+            <Grid item sm={12} md={8} lg={6} xl={6}>
               <Container fixed maxWidth={"sm"}>
                 <ScrollSpy useBoxMethod={false}>
                   <div id={"section-cover"}>
