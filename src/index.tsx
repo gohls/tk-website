@@ -5,12 +5,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ErrorPage from "./error-page";
+import About from "./components/About/About";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "about",
+    element: <About />,
   },
 ]);
 
