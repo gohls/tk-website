@@ -7,7 +7,6 @@ const useScheme = (): [Scheme, SetScheme] => {
   const [scheme, setScheme] = useState<Scheme>("light");
 
   const switchScheme = (newSchema: Scheme) => {
-    debugger;
     setScheme(newSchema);
   };
 
