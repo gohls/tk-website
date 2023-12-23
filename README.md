@@ -15,6 +15,7 @@ The folder structure was inspried by some conventions used with Next.js (e.g. a 
 - [ ] implement backend
 - [ ] create deployment environments
 - [ ] implement comment section for poems
+- [ ] Take a second look at type TPoem
 - [ ] minor tweaks to theme
 - [ ] create functionality for additional poem bookets
   - [ ] updates to theme by poem booket
