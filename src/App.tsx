@@ -7,7 +7,6 @@ import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const [scheme] = useScheme();
-  console.log(scheme);
   return (
     <BrowserRouter>
       <ThemeProvider scheme={scheme}>
