@@ -16,7 +16,6 @@ const WEB = {
   },
   // info
   since: 2023,
-  lang: "en-US",
 };
 
 export { WEB };
