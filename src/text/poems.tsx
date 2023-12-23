@@ -1,8 +1,44 @@
-export const poems = [
+import { TPoems } from "src/types";
+
+export const poems: TPoems = [
   {
-    author: "Tom Kuhn",
-    title: "If From this Soulful Heart",
-    poemLines: [
+    id: "0",
+    isCover: true,
+    createdTime: "12/20/1984",
+    date: { start_date: "06/01/2023" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "cover",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
+    title: "Looking at the Rose Through World-Colored Glasses",
+    poem: [
+      "This title is from a line in Lawrence Ferlinghetti's book, Poetry as Insurgent Art.",
+
+      "It is Dedicated to my two hero-editors, Richard Corson and Linda Hesselink. Much like scholars who deciphered The Rosetta Stone and Dead Sea scrolls, they were able to Transpose my pseudo-Mesopotamese scrawl into legible English. Also, many thanks to all of poet-teacher friends At Poetry Promise, and also to Bruce Isaacson and Izzy Bellinghausen. Many thanks to you all.",
+    ],
+    fullWidth: false,
+    thumbnail: "src/assets/images/cover.png",
+  },
+  {
+    id: "1",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "soulful-heart",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
+    title: "Soulful Heart",
+    poem: [
       "If from this soulful heart one little rose",
       "Might bloom its petal'd hope of fragrant rays",
       "Into the tired tangled frazzled haze",
@@ -16,11 +52,23 @@ export const poems = [
       "Assured, to look beyond as tranquil glows",
       "The sapphire sky to grandnew canopies of space.",
     ],
+    fullWidth: false,
   },
   {
-    author: "Tom Kuhn",
+    id: "2",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "a-rose-the-last",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
     title: "A Rose, The Last",
-    poemLines: [
+    poem: [
       "A rose, the Last, is warmed by sun's soft rays",
       "Through and through, yet quickly warmth does cool",
       "And freeze the rose's full-bloomed petals; days",
@@ -36,11 +84,23 @@ export const poems = [
       "So don't put faith in beauty at its worst ",
       "Or you may by untrue love be cursed.",
     ],
+    fullWidth: false,
   },
   {
-    author: "Tom Kuhn",
+    id: "3",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "o-rose-of-grace",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
     title: "O Rose of Grace",
-    poemLines: [
+    poem: [
       "O rose of Grace my eyes have faintly traced",
       "The gemlike colors of your rainbow hues",
       "And gently glimmered in the purpled blues",
@@ -55,11 +115,23 @@ export const poems = [
       "Enthralls - entrances what now for waste Was once enchanted.",
       "Then the vortex kind Leaves all the fleeting plights of fear behind",
     ],
+    fullWidth: false,
   },
   {
-    author: "Tom Kuhn",
+    id: "4",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "o-rose-of-mahler",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
     title: "O Rose of Mahler",
-    poemLines: [
+    poem: [
       "O rose of Mahler know the fleeting breath",
       "Of brilliant pain - you heard it screeching from behind",
       "And quelling all the quiet with white death",
@@ -75,11 +147,23 @@ export const poems = [
       "The resurrection rose - bright our hope's own light",
       "Unfoldings growing wider than the white",
     ],
+    fullWidth: false,
   },
   {
-    author: "Tom Kuhn",
-    title: "O'Keefe's White Rose",
-    poemLines: [
+    id: "5",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "white-rose",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
+    title: "White Rose",
+    poem: [
       "O'Keeffe's white rose like Stein's is touched",
       "With certain feelings: senses rise to soft",
       "Unfoldings - Cummings' \"petal of somewhere' clutched.\"",
@@ -95,11 +179,23 @@ export const poems = [
       "Of Frost I side with Stein and must disclose",
       'Her creed as mine: "a rose is a rose is a rose."',
     ],
+    fullWidth: false,
   },
   {
-    author: "Tom Kuhn",
+    id: "6",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "sound-too-bright",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
     title: "Sound Too Bright",
-    poemLines: [
+    poem: [
       "Clear water's rose-white sunlight glows: sound too bright",
       "The light to sound, to rose it grows and slowly knows",
       "Her silver mirrored sound will sunset close -",
@@ -115,11 +211,23 @@ export const poems = [
       "And rings of hope's rays sing and rose",
       "Will send with grace a grand new space: of repose",
     ],
+    fullWidth: false,
   },
   {
-    author: "",
-    title: "Somewhere deep inside",
-    poemLines: [
+    id: "7",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "deep-inside",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
+    title: "Deep Inside",
+    poem: [
       "Somewhere deep inside your farhard icebox heart",
       "There lurks a tiny spark of star to worm",
       "Its gnarl of squirm and mar the bleating journey's firm",
@@ -135,11 +243,23 @@ export const poems = [
       "You thought you were my hero, some big brave don juan",
       "There is nothing save grave roses for a black swan.",
     ],
+    fullWidth: false,
   },
   {
-    author: "Tom Kuhn",
+    id: "8",
+    createdTime: "12/20/1984",
+    date: { start_date: "12/20/1984" },
+    type: ["Post"],
+    status: ["Public"],
+    slug: "glaubenrose",
+    author: [
+      {
+        id: "1",
+        name: "Tom Kuhn",
+      },
+    ],
     title: "Glaubenrose",
-    poemLines: [
+    poem: [
       "Es ist eine Glaubenrose, a rose",
       "Of belief - of fifty summers' blistered heat -",
       "A scorching drought - and winters' frozen, of snows",
@@ -155,5 +275,6 @@ export const poems = [
       "This truth from the cradle to the tomb",
       'The thorn is as persistent as the bloom."',
     ],
+    fullWidth: false,
   },
 ];

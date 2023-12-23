@@ -2,11 +2,16 @@
   "name": "tk-website",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gohls/gohls.git"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.11",
     "@mui/material": "^5.14.11",
+    "@radix-ui/colors": "^3.0.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -16,12 +21,14 @@
     "@types/react-dom": "^18.2.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-notion-x": "^6.16.0",
     "react-router": "^6.20.1",
     "react-router-dom": "^6.20.1",
     "react-scripts": "^5.0.1",
     "react-ui-scrollspy": "^2.3.0",
-    "sass": "^1.68.0",
     "typescript": "^4.9.5",
+    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
