@@ -13,6 +13,7 @@ The folder structure was inspried by some conventions used with Next.js (e.g. a 
 ### Features
 
 - [ ] implement backend
+- [ ] create deployment environments
 - [ ] implement comment section for poems
 - [ ] minor tweaks to theme
 - [ ] create functionality for additional poem bookets
