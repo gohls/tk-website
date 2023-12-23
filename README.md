@@ -14,8 +14,9 @@ The folder structure was inspried by some conventions used with Next.js (e.g. a 
 
 - [ ] implement backend
 - [ ] implement comment section for poems
+- [ ] minor tweaks to theme
 - [ ] create functionality for additional poem bookets
-- [ ] minor updates to theme
+  - [ ] updates to theme by poem booket
 
 ### Tests
 
