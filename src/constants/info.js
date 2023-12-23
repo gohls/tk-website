@@ -7,7 +7,7 @@ const INFO = {
   // profile
   profile: {
     name: "Tom Kuhn",
-    image: "/tom-kuhn.svg",
+    image: { src: "/tom-kuhn.svg", alt: "profile image" },
     title: "Poet",
     bio: "Student of the arts.",
     email: "TomKuhnPoetry@gmail.com",
