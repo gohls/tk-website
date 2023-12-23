@@ -1,6 +1,10 @@
-export function formatDate(date: any, local?: any) {
+const formatDate = (date: string | number | Date) => {
   const d = new Date(date);
-  const options: any = { year: "numeric", month: "short" };
-  const res = d.toLocaleDateString(local, options);
+  const res = d.toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "short",
+  });
   return res;
-}
+};
+
+export { formatDate };
