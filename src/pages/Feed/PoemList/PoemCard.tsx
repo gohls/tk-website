@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import signature from "src/assets/images/tom-kuhn-signature.png";
 import ScrollSpy from "react-ui-scrollspy";
+import Card from "src/components/Card";
 
 type Props = {
   data: TPoem;
@@ -12,45 +13,47 @@ type Props = {
 
 const PoemCard: React.FC<Props> = ({ data }) => {
   return (
-    <StyledWrapper to={`/${data.slug}`}>
-      <ScrollSpy useBoxMethod={false}>
-        <article id={data.slug}>
-          {data.thumbnail && (
-            <div className="thumbnail">
-              <img src={signature} alt={data.title} />
-            </div>
-          )}
-          <div data-thumb={!!data.thumbnail} className="content">
-            <header
-              className="top"
-              style={{
-                justifyContent: data.isCover ? "center" : "space-between",
-              }}
-            >
-              <h2>{data.title}</h2>
-            </header>
+    <Card>
+      <StyledWrapper to={`/${data.slug}`}>
+        <ScrollSpy useBoxMethod={false}>
+          <article id={data.slug}>
+            {data.thumbnail && (
+              <div className="thumbnail">
+                <img src={signature} alt={data.title} />
+              </div>
+            )}
+            <div data-thumb={!!data.thumbnail} className="content">
+              <header
+                className="top"
+                style={{
+                  justifyContent: data.isCover ? "center" : "space-between",
+                }}
+              >
+                <h2>{data.title}</h2>
+              </header>
 
-            <div className="summary">
-              {data.poem &&
-                data.poem.map((line, idx) => {
-                  return <p key={idx}>{line}</p>;
-                })}
-            </div>
-            <div className="date">
-              <div className="content">
-                {formatDate(data?.date?.start_date)}
+              <div className="summary">
+                {data.poem &&
+                  data.poem.map((line, idx) => {
+                    return <p key={idx}>{line}</p>;
+                  })}
+              </div>
+              <div className="date">
+                <div className="content">
+                  {formatDate(data?.date?.start_date)}
+                </div>
+              </div>
+              <div className="contents">
+                {data.contents &&
+                  data.contents.map((content: string, idx: number) => (
+                    <Content key={idx}>{content}</Content>
+                  ))}
               </div>
             </div>
-            <div className="contents">
-              {data.contents &&
-                data.contents.map((content: string, idx: number) => (
-                  <Content key={idx}>{content}</Content>
-                ))}
-            </div>
-          </div>
-        </article>
-      </ScrollSpy>
-    </StyledWrapper>
+          </article>
+        </ScrollSpy>
+      </StyledWrapper>
+    </Card>
   );
 };
 
@@ -86,7 +89,8 @@ const StyledWrapper = styled(Link)`
     > .thumbnail {
       position: relative;
       width: 100%;
-      background-color: ${({ theme }) => theme.colors.red3};
+      background-color: ${({ theme }) =>
+        theme.scheme === "light" ? theme.colors.red4 : "white"};
       padding-bottom: 66%;
 
       @media (min-width: 1024px) {

@@ -1,4 +1,4 @@
-import { INFO } from "src/constants/info";
+import { WEB } from "src/constants/web";
 // import Image from "next/image";
 import React from "react";
 import styled from "@emotion/styled";
@@ -14,15 +14,15 @@ const MobileProfileCard: React.FC<Props> = () => {
       <div className="mid">
         <div className="wrapper">
           <img
-            src={INFO.profile.image}
+            src={WEB.profile.image.src}
             width={100}
             height={100}
-            alt="profile_image"
+            alt={WEB.profile.image.alt}
           />
           <div className="wrapper">
-            <div className="top">{INFO.profile.name}</div>
-            <div className="mid">{INFO.profile.title}</div>
-            <div className="btm">{INFO.profile.bio}</div>
+            <div className="top">{WEB.profile.name}</div>
+            <div className="mid">{WEB.profile.title}</div>
+            <div className="btm">{WEB.profile.bio}</div>
           </div>
         </div>
       </div>

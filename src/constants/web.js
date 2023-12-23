@@ -1,4 +1,4 @@
-const INFO = {
+const WEB = {
   // site info
   site: {
     title: "Tom Kuhn Poetry",
@@ -19,4 +19,4 @@ const INFO = {
   lang: "en-US",
 };
 
-export { INFO };
+export { WEB };

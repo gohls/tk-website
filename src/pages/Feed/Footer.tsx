@@ -1,10 +1,10 @@
-import { INFO } from "src/constants/info";
+import { WEB } from "src/constants/web";
 import React from "react";
 import styled from "@emotion/styled";
 
 const d = new Date();
 const y = d.getFullYear();
-const from = +INFO.since;
+const from = +WEB.since;
 
 type Props = {
   className?: string;
@@ -13,10 +13,10 @@ type Props = {
 const Footer: React.FC<Props> = ({ className }) => {
   return (
     <StyledWrapper className={className}>
-      © {INFO.profile.name} {from === y || !from ? y : `${from} - ${y}`}
+      © {WEB.profile.name} {from === y || !from ? y : `${from} - ${y}`}
       <br />
       <a
-        href={`https://github.com/${INFO.profile.github}`}
+        href={`https://github.com/${WEB.profile.github}`}
         target="_blank"
         rel="noreferrer"
       >

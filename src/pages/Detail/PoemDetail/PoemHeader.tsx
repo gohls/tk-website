@@ -1,4 +1,3 @@
-import { INFO } from "src/constants/info";
 import Content from "src/components/Content";
 import { TPoem } from "src/types";
 import { formatDate } from "src/utils";
