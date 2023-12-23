@@ -2,50 +2,47 @@ import { INFO } from "src/constants/info";
 import React from "react";
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import styled from "@emotion/styled";
+import CardTitle from "src/components/CardTitle.tsx";
+import Card from "src/components/Card";
 
 const ContactCard: React.FC = () => {
   return (
     <>
-      <StyledTitle>💬 Contact</StyledTitle>
-      <StyledWrapper>
-        {INFO.profile.email && (
-          <a
-            href={`mailto:${INFO.profile.email}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineMail className="icon" />
-            <div className="name">email</div>
-          </a>
-        )}
-        {INFO.profile.linkedin && (
-          <a
-            href={`https://www.linkedin.com/in/${INFO.profile.linkedin}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
-          </a>
-        )}
-      </StyledWrapper>
+      <CardTitle>💬 Contact</CardTitle>
+      <Card>
+        <StyledWrapper>
+          {INFO.profile.email && (
+            <a
+              href={`mailto:${INFO.profile.email}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineMail className="icon" />
+              <div className="name">email</div>
+            </a>
+          )}
+          {INFO.profile.linkedin && (
+            <a
+              href={`https://www.linkedin.com/in/${INFO.profile.linkedin}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiFillLinkedin className="icon" />
+              <div className="name">linkedin</div>
+            </a>
+          )}
+        </StyledWrapper>
+      </Card>
     </>
   );
 };
 
 export default ContactCard;
 
-const StyledTitle = styled.div`
-  padding: 0.25rem;
-  margin-bottom: 0.75rem;
-`;
 const StyledWrapper = styled.div`
   display: flex;
   padding: 0.25rem;
   flex-direction: column;
-  border-radius: 1rem;
-  background-color: ${({ theme }) =>
-    theme.scheme === "light" ? "white" : theme.colors.gray4};
   a {
     display: flex;
     padding: 0.75rem;
