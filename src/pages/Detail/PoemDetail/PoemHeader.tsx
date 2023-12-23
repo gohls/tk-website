@@ -24,9 +24,7 @@ const PoemHeader: React.FC<Props> = ({ data }) => {
                 <div className="hr"></div>
               </>
             )}
-            <div className="date">
-              {formatDate(data?.date?.start_date, INFO.lang)}
-            </div>
+            <div className="date">{formatDate(data?.date?.start_date)}</div>
           </div>
           <div className="mid">
             {data.contents && (
