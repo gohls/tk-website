@@ -1,8 +1,7 @@
 import React from "react";
 import PoemHeader from "./PoemHeader";
 import PoemFooter from "./PoemFooter";
-import styled from "@emotion/styled";
-import { poems } from "src/text/poems";
+import { poems } from "src/assets/text/poems";
 import PoemBody from "./PoemBody";
 import Paper from "src/components/Paper";
 
@@ -13,7 +12,8 @@ type Props = {
 const PoemDetail: React.FC<Props> = ({ slug }) => {
   const data = poems;
   const idx = data.findIndex((post) => post.slug === slug);
-  if (!idx) return null;
+  // findIndex returns -1 if not found
+  if (idx === -1) return null;
 
   return (
     <Paper>
