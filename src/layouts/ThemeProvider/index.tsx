@@ -1,7 +1,6 @@
 import { ThemeProvider as _ThemeProvider } from "@emotion/react";
 import { Global } from "./Global";
 import { Scheme, createTheme } from "src/styles";
-import useScheme from "src/hooks/useScheme";
 import React from "react";
 
 const initialState = {
