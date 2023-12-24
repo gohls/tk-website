@@ -1,9 +1,3 @@
-// import { NextPage } from "next";
-// import { AppProps } from "next/app";
-import { EmotionJSX } from "@emotion/react/types/jsx-namespace";
-import { ExtendedRecordMap } from "notion-types";
-import { ReactElement, ReactNode } from "react";
-
 export interface routerType {
   index?: boolean;
   title: string;
@@ -36,7 +30,7 @@ export type TPoem = {
   isCover?: boolean;
 };
 
-export type PostDetail = TPoem;
+export type PoemDetail = TPoem;
 
 export type TPoems = TPoem[];
 
