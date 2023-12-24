@@ -20,7 +20,7 @@ const Footer: React.FC<Props> = ({ className }) => {
         target="_blank"
         rel="noreferrer"
       >
-        🔨 Built by Simon Gohl
+        Built by Simon Gohl
       </a>
     </StyledWrapper>
   );
