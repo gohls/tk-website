@@ -1,15 +1,15 @@
-import useScheme from "./hooks/useScheme";
+import { useMemo, useState } from "react";
 import Header from "./layouts/Header";
 import Main from "./layouts/Main";
 import { ThemeProvider } from "./layouts/ThemeProvider";
 import AppRouter from "./routes";
 import { BrowserRouter } from "react-router-dom";
+import useScheme from "./hooks/useScheme";
 
 function App() {
-  const [scheme] = useScheme();
   return (
     <BrowserRouter>
-      <ThemeProvider scheme={scheme}>
+      <ThemeProvider>
         <Header fullWidth={false} />
         <Main>
           <AppRouter />

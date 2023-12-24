@@ -43,6 +43,7 @@ const StyledWrapper = styled.div`
       width: 100%;
       inset: 0px;
       color: transparent;
+      filter: ${({ theme }) => theme.scheme === "dark" && "invert(1)"};
     }
     &:after {
       content: "";
