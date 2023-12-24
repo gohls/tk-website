@@ -16,11 +16,11 @@ const Footer: React.FC<Props> = ({ className }) => {
       © {WEB.profile.name} {from === y || !from ? y : `${from} - ${y}`}
       <br />
       <a
-        href={`https://github.com/${WEB.profile.github}`}
+        href={`https://github.com/${WEB.dev.github}`}
         target="_blank"
         rel="noreferrer"
       >
-        Built by Simon Gohl
+        Built by {WEB.dev.name}
       </a>
     </StyledWrapper>
   );
