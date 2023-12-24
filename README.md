@@ -18,7 +18,7 @@ The folder structure was inspried by some conventions used with Next.js (e.g. a 
 - [ ] Take a second look at type TPoem
 - [ ] minor tweaks to theme
 - [ ] create functionality for additional poem bookets
-  - [ ] updates to theme by poem booket
+  - [ ] use custom theme for different poem bookets
 
 ### Tests
 
@@ -27,4 +27,4 @@ The folder structure was inspried by some conventions used with Next.js (e.g. a 
 #### Bugs
 
 - [ ] fidgety scroll spy
-- [ ] fix useScheme hook
+- [x] fix useScheme hook ==> implemented theme context provider
