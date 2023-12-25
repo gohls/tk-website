@@ -53,11 +53,11 @@ const StyledWrapper = styled.div`
       gap: 0.5rem;
       align-items: center;
       > img {
-        position: absolute;
+        position: relative;
         /* height: 100%; */
-        width: 100%;
+        width: 20%;
         inset: 0px;
-        color: transparent;
+        /* color: transparent; */
         filter: ${({ theme }) => theme.scheme === "dark" && "invert(1)"};
       }
       > .wrapper {
