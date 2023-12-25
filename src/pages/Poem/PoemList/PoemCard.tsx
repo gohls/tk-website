@@ -1,5 +1,4 @@
 import { formatDate } from "src/utils";
-import Content from "src/components/Content";
 import { TPoem } from "src/types";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";

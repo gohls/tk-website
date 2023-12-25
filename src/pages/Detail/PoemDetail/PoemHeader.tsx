@@ -1,4 +1,3 @@
-import Content from "src/components/Content";
 import { TPoem } from "src/types";
 import { formatDate } from "src/utils";
 import React from "react";
@@ -24,15 +23,7 @@ const PoemHeader: React.FC<Props> = ({ data }) => {
           )}
           <div className="date">{formatDate(data?.date?.start_date)}</div>
         </div>
-        <div className="mid">
-          {/* {data.contents && (
-            <div className="contents">
-              {data.contents.map((content: string) => (
-                <Content key={content}>{content}</Content>
-              ))}
-            </div>
-          )} */}
-        </div>
+        <div className="mid"></div>
         {data.thumbnail && (
           <div className="thumbnail">
             <img src={data.thumbnail} alt="" />

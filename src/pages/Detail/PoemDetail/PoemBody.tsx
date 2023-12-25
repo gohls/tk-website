@@ -1,5 +1,3 @@
-import { formatDate } from "src/utils";
-import Content from "src/components/Content";
 import { TPoem } from "src/types";
 import styled from "@emotion/styled";
 
@@ -11,25 +9,11 @@ const PoemBody: React.FC<Props> = ({ data }) => {
   return (
     <StyledWrapper>
       <article id={data.slug}>
-        {/* {data.thumbnail && (
-          <div className="thumbnail">
-            <img src={data.thumbnail} alt={data.title} />
-          </div>
-        )} */}
         <div data-thumb={!!data.thumbnail} className="content">
           <div className="poem">
             {data.poem.map((line, idx) => {
               return <p key={idx}>{line}</p>;
             })}
-          </div>
-          {/* <div className="date">
-            <div className="content">{formatDate(data?.date?.start_date)}</div>
-          </div> */}
-          <div className="contents">
-            {/* {data.contents &&
-              data.contents.map((contents: string, idx: number) => (
-                <Content key={idx}>{contents}</Content>
-              ))} */}
           </div>
         </div>
       </article>
