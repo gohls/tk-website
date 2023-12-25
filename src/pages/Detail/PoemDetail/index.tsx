@@ -19,9 +19,7 @@ const PoemDetail: React.FC<Props> = ({ slug }) => {
     <Paper>
       <PoemHeader data={data[idx]} />
       <PoemBody data={data[idx]} />
-      <>
-        <PoemFooter />
-      </>
+      <PoemFooter />
     </Paper>
   );
 };
