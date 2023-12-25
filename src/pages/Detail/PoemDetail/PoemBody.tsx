@@ -2,7 +2,6 @@ import { formatDate } from "src/utils";
 import Content from "src/components/Content";
 import { TPoem } from "src/types";
 import styled from "@emotion/styled";
-import signature from "src/assets/images/tom-kuhn-signature.png";
 
 type Props = {
   data: TPoem;
@@ -12,26 +11,25 @@ const PoemBody: React.FC<Props> = ({ data }) => {
   return (
     <StyledWrapper>
       <article id={data.slug}>
-        {data.thumbnail && (
+        {/* {data.thumbnail && (
           <div className="thumbnail">
-            <img src={signature} alt={data.title} />
+            <img src={data.thumbnail} alt={data.title} />
           </div>
-        )}
+        )} */}
         <div data-thumb={!!data.thumbnail} className="content">
           <div className="poem">
-            {data.poem &&
-              data.poem.map((line, idx) => {
-                return <p key={idx}>{line}</p>;
-              })}
+            {data.poem.map((line, idx) => {
+              return <p key={idx}>{line}</p>;
+            })}
           </div>
-          <div className="date">
+          {/* <div className="date">
             <div className="content">{formatDate(data?.date?.start_date)}</div>
-          </div>
+          </div> */}
           <div className="contents">
-            {data.contents &&
+            {/* {data.contents &&
               data.contents.map((contents: string, idx: number) => (
                 <Content key={idx}>{contents}</Content>
-              ))}
+              ))} */}
           </div>
         </div>
       </article>
@@ -43,7 +41,7 @@ export default PoemBody;
 
 const StyledWrapper = styled.div`
   article {
-    overflow: hidden;
+    /* overflow: hidden;
     position: relative;
     margin-bottom: 1.5rem;
     border-radius: 1rem;
@@ -55,12 +53,12 @@ const StyledWrapper = styled.div`
 
     @media (min-width: 768px) {
       margin-bottom: 2rem;
-    }
+    } */
 
-    :hover {
+    /* :hover {
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
+    } */
     > .category {
       position: absolute;
       top: 1rem;
