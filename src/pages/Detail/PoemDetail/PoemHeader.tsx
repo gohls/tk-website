@@ -12,31 +12,33 @@ const PoemHeader: React.FC<Props> = ({ data }) => {
   return (
     <StyledWrapper>
       <h1 className="title">{data.title}</h1>
-      {data.type[0] !== "Paper" && (
-        <nav>
-          <div className="top">
-            {data.author && data.author[0] && data.author[0].name && (
-              <>
-                <div className="author">
-                  <div className="">{data.author[0].name}</div>
-                </div>
-                <div className="hr"></div>
-              </>
-            )}
-            <div className="date">{formatDate(data?.date?.start_date)}</div>
-          </div>
-          <div className="mid">
-            {data.contents && (
-              <div className="contents">
-                {data.contents.map((content: string) => (
-                  <Content key={content}>{content}</Content>
-                ))}
+      <nav>
+        <div className="top">
+          {data.author && (
+            <>
+              <div className="author">
+                <div className="">{data.author}</div>
               </div>
-            )}
+              <div className="hr"></div>
+            </>
+          )}
+          <div className="date">{formatDate(data?.date?.start_date)}</div>
+        </div>
+        <div className="mid">
+          {/* {data.contents && (
+            <div className="contents">
+              {data.contents.map((content: string) => (
+                <Content key={content}>{content}</Content>
+              ))}
+            </div>
+          )} */}
+        </div>
+        {data.thumbnail && (
+          <div className="thumbnail">
+            <img src={data.thumbnail} alt="" />
           </div>
-          {data.thumbnail && <div className="thumbnail"></div>}
-        </nav>
-      )}
+        )}
+      </nav>
     </StyledWrapper>
   );
 };
@@ -44,6 +46,7 @@ const PoemHeader: React.FC<Props> = ({ data }) => {
 export default PoemHeader;
 
 const StyledWrapper = styled.div`
+  padding: 1rem;
   .title {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -95,8 +98,17 @@ const StyledWrapper = styled.div`
       margin-bottom: 1.75rem;
       border-radius: 1.5rem;
       width: 100%;
-      background-color: ${({ theme }) => theme.colors.gray4};
+      background-color: ${({ theme }) =>
+        theme.scheme === "light" ? theme.colors.red3 : "white"};
       padding-bottom: 66%;
+
+      > img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        inset: 0px;
+        color: transparent;
+      }
 
       @media (min-width: 1024px) {
         padding-bottom: 50%;

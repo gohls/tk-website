@@ -3,18 +3,11 @@ import { TPoems } from "src/types";
 export const poems: TPoems = [
   {
     id: "0",
-    isCover: true,
     createdTime: "12/20/1984",
     date: { start_date: "06/01/2023" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "cover",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "Looking at the Rose Through World-Colored Glasses",
     poem: [
       "This title is from a line in Lawrence Ferlinghetti's book, Poetry as Insurgent Art.",
@@ -22,21 +15,15 @@ export const poems: TPoems = [
       "It is Dedicated to my two hero-editors, Richard Corson and Linda Hesselink. Much like scholars who deciphered The Rosetta Stone and Dead Sea scrolls, they were able to Transpose my pseudo-Mesopotamese scrawl into legible English. Also, many thanks to all of poet-teacher friends At Poetry Promise, and also to Bruce Isaacson and Izzy Bellinghausen. Many thanks to you all.",
     ],
     fullWidth: false,
-    thumbnail: "src/assets/images/cover.png",
+    thumbnail: "/tom-kuhn-signature.png",
   },
   {
     id: "1",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "soulful-heart",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "Soulful Heart",
     poem: [
       "If from this soulful heart one little rose",
@@ -58,15 +45,9 @@ export const poems: TPoems = [
     id: "2",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "a-rose-the-last",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "A Rose, The Last",
     poem: [
       "A rose, the Last, is warmed by sun's soft rays",
@@ -90,15 +71,9 @@ export const poems: TPoems = [
     id: "3",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "o-rose-of-grace",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "O Rose of Grace",
     poem: [
       "O rose of Grace my eyes have faintly traced",
@@ -121,15 +96,9 @@ export const poems: TPoems = [
     id: "4",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "o-rose-of-mahler",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "O Rose of Mahler",
     poem: [
       "O rose of Mahler know the fleeting breath",
@@ -153,15 +122,9 @@ export const poems: TPoems = [
     id: "5",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "white-rose",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "White Rose",
     poem: [
       "O'Keeffe's white rose like Stein's is touched",
@@ -185,15 +148,9 @@ export const poems: TPoems = [
     id: "6",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "sound-too-bright",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "Sound Too Bright",
     poem: [
       "Clear water's rose-white sunlight glows: sound too bright",
@@ -217,15 +174,9 @@ export const poems: TPoems = [
     id: "7",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "deep-inside",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "Deep Inside",
     poem: [
       "Somewhere deep inside your farhard icebox heart",
@@ -249,15 +200,9 @@ export const poems: TPoems = [
     id: "8",
     createdTime: "12/20/1984",
     date: { start_date: "12/20/1984" },
-    type: ["Post"],
-    status: ["Public"],
+    booklet: ["Post"],
     slug: "glaubenrose",
-    author: [
-      {
-        id: "1",
-        name: "Tom Kuhn",
-      },
-    ],
+    author: "Tom Kuhn",
     title: "Glaubenrose",
     poem: [
       "Es ist eine Glaubenrose, a rose",

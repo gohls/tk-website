@@ -3,7 +3,6 @@ import Content from "src/components/Content";
 import { TPoem } from "src/types";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-import signature from "src/assets/images/tom-kuhn-signature.png";
 import ScrollSpy from "react-ui-scrollspy";
 import Card from "src/components/Card";
 
@@ -19,35 +18,27 @@ const PoemCard: React.FC<Props> = ({ data }) => {
           <article id={data.slug}>
             {data.thumbnail && (
               <div className="thumbnail">
-                <img src={signature} alt={data.title} />
+                <img src={data.thumbnail} alt={data.title} />
               </div>
             )}
             <div data-thumb={!!data.thumbnail} className="content">
               <header
                 className="top"
                 style={{
-                  justifyContent: data.isCover ? "center" : "space-between",
+                  justifyContent: data.thumbnail ? "center" : "space-between",
                 }}
               >
                 <h2>{data.title}</h2>
               </header>
-
-              <div className="summary">
-                {data.poem &&
-                  data.poem.map((line, idx) => {
-                    return <p key={idx}>{line}</p>;
-                  })}
+              <div className="text">
+                {data.poem.map((line, idx) => {
+                  return <p key={idx}>{line}</p>;
+                })}
               </div>
               <div className="date">
                 <div className="content">
                   {formatDate(data?.date?.start_date)}
                 </div>
-              </div>
-              <div className="contents">
-                {data.contents &&
-                  data.contents.map((content: string, idx: number) => (
-                    <Content key={idx}>{content}</Content>
-                  ))}
               </div>
             </div>
           </article>
@@ -90,7 +81,7 @@ const StyledWrapper = styled(Link)`
       position: relative;
       width: 100%;
       background-color: ${({ theme }) =>
-        theme.scheme === "light" ? theme.colors.red4 : "white"};
+        theme.scheme === "light" ? theme.colors.red3 : "white"};
       padding-bottom: 66%;
 
       @media (min-width: 1024px) {
@@ -148,7 +139,7 @@ const StyledWrapper = styled(Link)`
           }
         }
       }
-      > .summary {
+      > .text {
         margin-bottom: 1rem;
         p {
           display: none;
@@ -159,10 +150,6 @@ const StyledWrapper = styled(Link)`
             display: block;
           }
         }
-      }
-      > .contents {
-        display: flex;
-        gap: 0.5rem;
       }
     }
   }
