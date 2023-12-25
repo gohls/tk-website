@@ -44,7 +44,8 @@ const ContentsList: React.FC<Props> = () => {
             href={`#${poem.slug}`}
             onClick={(e) => handleClickContent(e)}
           >
-            {poem.isCover ? "Cover" : poem.title}
+            {/* TODO: not every thumbnail is a cover */}
+            {poem.thumbnail ? "Cover" : poem.title}
           </a>
         ))}
       </div>
