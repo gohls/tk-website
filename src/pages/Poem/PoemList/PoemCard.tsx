@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import signature from "src/assets/images/tom-kuhn-signature.png";
 import ScrollSpy from "react-ui-scrollspy";
 import Card from "src/components/Card";
-import { createRef } from "react";
 
 type Props = {
   data: TPoem;

@@ -1,4 +1,4 @@
-import { WEB } from "src/constants/web";
+import { CONFIG } from "src/config";
 import React from "react";
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import styled from "@emotion/styled";
@@ -11,9 +11,9 @@ const ContactCard: React.FC = () => {
       <CardTitle>💬 Contact</CardTitle>
       <Card>
         <StyledWrapper>
-          {WEB.profile.email && (
+          {CONFIG.profile.email && (
             <a
-              href={`mailto:${WEB.profile.email}`}
+              href={`mailto:${CONFIG.profile.email}`}
               rel="noreferrer"
               target="_blank"
             >
@@ -21,9 +21,9 @@ const ContactCard: React.FC = () => {
               <div className="name">email</div>
             </a>
           )}
-          {WEB.profile.linkedin && (
+          {CONFIG.profile.linkedin && (
             <a
-              href={`https://www.linkedin.com/in/${WEB.profile.linkedin}`}
+              href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
               rel="noreferrer"
               target="_blank"
             >

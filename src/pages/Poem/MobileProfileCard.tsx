@@ -1,5 +1,4 @@
-import { WEB } from "src/constants/web";
-// import Image from "next/image";
+import { CONFIG } from "src/config";
 import React from "react";
 import styled from "@emotion/styled";
 // import tom from "src/assets/images/profile-image.png";
@@ -14,15 +13,15 @@ const MobileProfileCard: React.FC<Props> = () => {
       <div className="mid">
         <div className="wrapper">
           <img
-            src={WEB.profile.image.src}
+            src={CONFIG.profile.image.mobile.src}
             width={100}
             height={100}
-            alt={WEB.profile.image.alt}
+            alt={CONFIG.profile.image.mobile.alt}
           />
           <div className="wrapper">
-            <div className="top">{WEB.profile.name}</div>
-            <div className="mid">{WEB.profile.title}</div>
-            <div className="btm">{WEB.profile.bio}</div>
+            <div className="top">{CONFIG.profile.name}</div>
+            <div className="mid">{CONFIG.profile.title}</div>
+            <div className="btm">{CONFIG.profile.bio}</div>
           </div>
         </div>
       </div>
@@ -46,13 +45,21 @@ const StyledWrapper = styled.div`
   > .mid {
     padding: 0.5rem;
     margin-bottom: 1rem;
-    // border-radius: 1rem;
+    border-radius: 1rem;
     background-color: ${({ theme }) =>
       theme.scheme === "light" ? "white" : theme.colors.gray4};
     > .wrapper {
       display: flex;
       gap: 0.5rem;
       align-items: center;
+      > img {
+        position: absolute;
+        /* height: 100%; */
+        width: 100%;
+        inset: 0px;
+        color: transparent;
+        filter: ${({ theme }) => theme.scheme === "dark" && "invert(1)"};
+      }
       > .wrapper {
         height: fit-content;
         > .top {
@@ -60,14 +67,8 @@ const StyledWrapper = styled.div`
           line-height: 1.75rem;
           font-style: italic;
           font-weight: 700;
-          > img {
-            position: absolute;
-            /* height: 100%; */
-            width: 100%;
-            inset: 0px;
-            color: transparent;
-          }
         }
+
         > .mid {
           margin-bottom: 0.5rem;
           font-size: 0.875rem;

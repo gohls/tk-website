@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { WEB } from "src/constants/web";
+import { CONFIG } from "src/config";
 import { Emoji } from "src/components/Emoji";
 import Card from "src/components/Card";
 import CardTitle from "src/components/CardTitle.tsx";
@@ -16,12 +16,15 @@ const ProfileCard: React.FC<Props> = () => {
       <Card>
         <StyledWrapper>
           <div className="top">
-            <img src={WEB.profile.image.src} alt={WEB.profile.image.alt} />
+            <img
+              src={CONFIG.profile.image.src}
+              alt={CONFIG.profile.image.alt}
+            />
           </div>
           <div className="mid">
-            <div className=" name">{WEB.profile.name}</div>
-            <div className="title">{WEB.profile.title}</div>
-            <div className="text-sm mb-2">{WEB.profile.bio}</div>
+            <div className="name">{CONFIG.profile.name}</div>
+            <div className="title">{CONFIG.profile.title}</div>
+            <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
           </div>
         </StyledWrapper>
       </Card>

@@ -1,10 +1,10 @@
-import { WEB } from "src/constants/web";
+import { CONFIG } from "src/config";
 import React from "react";
 import styled from "@emotion/styled";
 
 const d = new Date();
 const y = d.getFullYear();
-const from = +WEB.since;
+const from = +CONFIG.since;
 
 type Props = {
   className?: string;
@@ -13,14 +13,14 @@ type Props = {
 const Footer: React.FC<Props> = ({ className }) => {
   return (
     <StyledWrapper className={className}>
-      © {WEB.profile.name} {from === y || !from ? y : `${from} - ${y}`}
+      © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`}
       <br />
       <a
-        href={`https://github.com/${WEB.dev.github}`}
+        href={`https://github.com/${CONFIG.dev.github}`}
         target="_blank"
         rel="noreferrer"
       >
-        Built by {WEB.dev.name}
+        Built by {CONFIG.dev.name}
       </a>
     </StyledWrapper>
   );

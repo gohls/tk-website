@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import { Emoji } from "src/components/Emoji";
-import { poems } from "src/text/poems";
+import { poems } from "src/assets/text/poems";
 import { HEADER_HEIGHT } from ".";
 
 type Props = {};

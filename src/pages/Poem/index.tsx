@@ -10,7 +10,7 @@ export const HEADER_HEIGHT = 73;
 
 type Props = {};
 
-const Feed: React.FC<Props> = () => {
+const Poem: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="lt">
@@ -37,7 +37,7 @@ const Feed: React.FC<Props> = () => {
   );
 };
 
-export default Feed;
+export default Poem;
 
 const StyledWrapper = styled.div`
   grid-template-columns: repeat(12, minmax(0, 1fr));

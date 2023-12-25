@@ -2,24 +2,24 @@ import { Route, Routes } from "react-router-dom";
 import About from "src/components/About/About";
 import PoemDetail from "src/pages/Detail";
 import PageError from "src/pages/Error";
-import Feed from "src/pages/Feed";
+import Poem from "src/pages/Poem";
 import { routerType } from "src/types";
 
 const pages: routerType[] = [
   {
-    title: "feed",
+    title: "poem",
     path: "",
-    element: <Feed />,
-  },
-  {
-    title: "about",
-    path: "about",
-    element: <About />,
+    element: <Poem />,
   },
   {
     title: "poem",
     path: ":poemId",
     element: <PoemDetail />,
+  },
+  {
+    title: "about",
+    path: "about",
+    element: <About />,
   },
   {
     path: "*",
