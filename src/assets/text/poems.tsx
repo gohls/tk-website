@@ -3,7 +3,7 @@ import { TPoems } from "src/types";
 export const poems: TPoems = [
   {
     id: "0",
-    createdTime: "12/20/1984",
+    createdTime: "06/01/2023",
     date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "cover",
@@ -19,8 +19,8 @@ export const poems: TPoems = [
   },
   {
     id: "1",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "soulful-heart",
     author: "Tom Kuhn",
@@ -43,8 +43,8 @@ export const poems: TPoems = [
   },
   {
     id: "2",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "a-rose-the-last",
     author: "Tom Kuhn",
@@ -69,8 +69,8 @@ export const poems: TPoems = [
   },
   {
     id: "3",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "o-rose-of-grace",
     author: "Tom Kuhn",
@@ -94,8 +94,8 @@ export const poems: TPoems = [
   },
   {
     id: "4",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "o-rose-of-mahler",
     author: "Tom Kuhn",
@@ -120,8 +120,8 @@ export const poems: TPoems = [
   },
   {
     id: "5",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "white-rose",
     author: "Tom Kuhn",
@@ -146,8 +146,8 @@ export const poems: TPoems = [
   },
   {
     id: "6",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "sound-too-bright",
     author: "Tom Kuhn",
@@ -172,8 +172,8 @@ export const poems: TPoems = [
   },
   {
     id: "7",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "deep-inside",
     author: "Tom Kuhn",
@@ -198,8 +198,8 @@ export const poems: TPoems = [
   },
   {
     id: "8",
-    createdTime: "12/20/1984",
-    date: { start_date: "12/20/1984" },
+    createdTime: "06/01/2023",
+    date: { start_date: "06/01/2023" },
     booklet: ["Post"],
     slug: "glaubenrose",
     author: "Tom Kuhn",
