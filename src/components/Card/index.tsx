@@ -23,7 +23,3 @@ const StyledWrapper = styled.div`
     /* padding: 1rem; */
   }
 `;
-
-// display: flex;
-// padding: 0.25rem;
-// flex-direction: column;
