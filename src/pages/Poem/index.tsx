@@ -4,7 +4,7 @@ import ContentsList from "./ContentsList";
 import MobileProfileCard from "./MobileProfileCard";
 import ProfileCard from "./ProfileCard";
 import ContactCard from "./ContactCard";
-import PostList from "./PoemList";
+import PoemList from "./PoemList";
 
 export const HEADER_HEIGHT = 73;
 
@@ -21,7 +21,7 @@ const Poem: React.FC<Props> = () => {
         <div className="contents">
           <ContentsList />
         </div>
-        <PostList />
+        <PoemList />
         <div className="footer">
           <Footer />
         </div>
