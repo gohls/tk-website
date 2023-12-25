@@ -1,4 +1,4 @@
-const WEB = {
+const CONFIG = {
   // site info
   site: {
     title: "Tom Kuhn Poetry",
@@ -7,8 +7,12 @@ const WEB = {
   // profile info
   profile: {
     name: "Tom Kuhn",
-    image: { src: "/tom-kuhn.svg", alt: "profile image" },
-    title: "Poet",
+    image: {
+      src: "/tom-kuhn.svg",
+      alt: "Profile image",
+      mobile: { src: "/flower.svg", alt: "Flower image" },
+    },
+    title: "Poet • Lover • Human",
     bio: "Passionate about the arts, captivated by nature.",
     email: "fake_email@gmail.com", // placeholder
     linkedin: "fake", // placeholder
@@ -21,4 +25,4 @@ const WEB = {
   since: 2023,
 };
 
-export { WEB };
+export { CONFIG };
