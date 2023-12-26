@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import React, { ReactNode } from "react";
 
 type Props = {
@@ -6,12 +7,10 @@ type Props = {
 };
 
 export const Emoji = ({ className, children }: Props) => {
-  return (
-    <span
-      className={className}
-      style={{ fontWeight: 400, fontStyle: "normal" }}
-    >
-      {children}
-    </span>
-  );
+  return <StyledWrapper className={className}>{children}</StyledWrapper>;
 };
+
+const StyledWrapper = styled.span`
+  font-weight: 400;
+  font-style: normal;
+`;
