@@ -113,15 +113,6 @@ const StyledWrapper = styled.div`
       }
       > .poem {
         margin-bottom: 1rem;
-        p {
-          display: none;
-          line-height: 2rem;
-          color: ${({ theme }) => theme.colors.gray11};
-
-          @media (min-width: 768px) {
-            display: block;
-          }
-        }
       }
       > .contents {
         display: flex;
