@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import About from "src/components/About/About";
+import About from "src/pages/About";
 import PoemDetail from "src/pages/Detail";
 import PageError from "src/pages/Error";
 import Poem from "src/pages/Poem";
