@@ -25,24 +25,6 @@ export default PoemBody;
 
 const StyledWrapper = styled.div`
   article {
-    /* overflow: hidden;
-    position: relative;
-    margin-bottom: 1.5rem;
-    border-radius: 1rem;
-    background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.gray4};
-    transition-property: box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
-
-    @media (min-width: 768px) {
-      margin-bottom: 2rem;
-    } */
-
-    /* :hover {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    } */
     > .category {
       position: absolute;
       top: 1rem;
@@ -72,7 +54,8 @@ const StyledWrapper = styled.div`
       padding: 1rem;
 
       &[data-thumb="false"] {
-        padding-top: 3.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
       }
       > .top {
         display: flex;
