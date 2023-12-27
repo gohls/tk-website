@@ -1,7 +1,7 @@
+import React from "react";
 import { ThemeProvider as _ThemeProvider } from "@emotion/react";
 import { Global } from "./Global";
 import { Scheme, createTheme } from "src/styles";
-import React from "react";
 
 const initialState = {
   scheme: "light",
@@ -15,7 +15,7 @@ type Props = {
 };
 
 const ThemeProvider = ({ children }: Props) => {
-  const [scheme, setScheme] = React.useState("light");
+  const [scheme, setScheme] = React.useState(initialState.scheme);
 
   const toggle = (scheme: Scheme) => {
     setScheme(scheme);
