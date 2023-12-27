@@ -2,7 +2,7 @@ import { CONFIG } from "src/config";
 import React from "react";
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import styled from "@emotion/styled";
-import CardTitle from "src/components/CardTitle.tsx";
+import CardTitle from "src/components/Card/CardTitle.tsx";
 import Card from "src/components/Card";
 
 const ContactCard: React.FC = () => {

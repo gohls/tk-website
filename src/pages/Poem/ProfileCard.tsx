@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { CONFIG } from "src/config";
 import { Emoji } from "src/components/Emoji";
 import Card from "src/components/Card";
-import CardTitle from "src/components/CardTitle.tsx";
+import CardTitle from "src/components/Card/CardTitle.tsx";
 
 type Props = {};
 
