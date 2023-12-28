@@ -2,9 +2,13 @@
 
 <img width="1190" alt="website-screenshot" src="https://github.com/gohls/tk-website/assets/66274765/7b29e603-cc92-4212-8a08-497166a72485">
 
-This website was create for a friend, who writes poems.
+This website was create for a friend, who writes poems. Visit [Tom Kuhn Poetry](https://tk-website.vercel.app/) to see site.
 
 _It, furthermore, serves as a showcase for my endeavors in the realm of software development. I have outlined some of my thoughts and insights around the development of it._
+
+## Dev Notes
+
+This website is built using [React](https://react.dev/), while [Notion](https://tom-kuhn-poetry.notion.site/tom-kuhn-poetry/579da44c286942dba67c8c8d5ca0390b?v=7cb5edff85794e2791b91a716187cba4) serves as the backend. (WIP)
 
 ## Folder Structure
 
@@ -12,25 +16,13 @@ The folder structure draws inspiration from certain conventions employed in Next
 
 Otherwise, the folder structure follow common/best practices, such as grouping `components`, `apis`, `utils`, etc.
 
-## apis
-
-## components
-
-This folder consists of reusable UI components, such as cards, links,paper, errors, and more as needed.
-
-## utils
-
-This folder consists of some repeatedly used functions that are commonly used in the project like data formatting.
-
 ## TODO
 
 ### Features
 
 - [ ] implement backend
-- [ ] create deployment environments e.g. `dev`, `staging`, `production`
+- [ ] create `preview` environments
 - [ ] implement comment section for poems
-- [x] Take a second look at type TPoem
-- [ ] minor tweaks to theme
 - [ ] create functionality for additional poem booklets
   - [ ] use custom theme for different poem booklets
 
@@ -41,4 +33,3 @@ This folder consists of some repeatedly used functions that are commonly used in
 #### Bugs
 
 - [ ] fidgety scroll spy
-- [x] fix useScheme hook ==> implemented theme context provider
