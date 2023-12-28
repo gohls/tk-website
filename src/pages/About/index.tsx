@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { about } from "src/assets/text/about";
-import NavToBtn from "src/components/Buttons/NavToBtn";
+import NavToBtn from "src/components/Links/NavToLink";
 import Paper from "src/components/Paper";
 import PaperBody from "src/components/Paper/PaperBody";
 import PaperHeader from "src/components/Paper/PaperHeader";
