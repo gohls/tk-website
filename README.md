@@ -6,7 +6,7 @@ This website was built for a friend, who writes poems. Visit [Tom Kuhn Poetry](h
 
 _It, furthermore, serves as a showcase for my endeavors in the realm of software development. Below I outlined some `Dev Notes` to provide some insights around the development of the project._
 
-## Dev Notes
+## 👨🏼‍💻 Dev Notes
 
 This website is built using [React](https://react.dev/), while [Notion](https://tom-kuhn-poetry.notion.site/tom-kuhn-poetry/579da44c286942dba67c8c8d5ca0390b?v=7cb5edff85794e2791b91a716187cba4) serves as the backend. (WIP)
 
@@ -14,13 +14,13 @@ React is one of my favorite frameworks to use on the frontend. Usally I use in c
 
 As for the backend, it's still currently work in progress, but I'm going to employ Notion, paired with [notion-api-worker](https://github.com/splitbee/notion-api-worker).
 
-## Folder Structure
+## 📁 Folder Structure
 
 The folder structure draws inspiration from certain conventions employed in Next.js, exemplified by the presence of folders like `routes`, `layout`, and `pages`. These conventions enhance code readability, maintainability, and overall organization, especially as the project grows.
 
-Otherwise, the folder structure follow common/best practices, such as grouping `components`, `apis`, `utils`, etc.
+Otherwise, the folder structure follows common/best practices, such as grouping `components`, `apis`, `utils`, etc.
 
-## TODO
+## ☑️ TODO
 
 ### Features
 
