@@ -2,10 +2,9 @@
 
 ## Intro
 
-<img width="1190" alt="website-screenshot" src="https://github.com/gohls/tk-website/assets/66274765/7b29e603-cc92-4212-8a08-497166a72485">
-
-
 This website was create for a friend, who writes poems.
+
+<img width="1190" alt="website-screenshot" src="https://github.com/gohls/tk-website/assets/66274765/7b29e603-cc92-4212-8a08-497166a72485">
 
 _It, furthermore, serves as a showcase for my endeavors in the realm of software development. I have outlined some of my thoughts and insights around the development of it._
 
