@@ -3,7 +3,7 @@ import { poems } from "src/assets/text/poems";
 import Paper from "src/components/Paper";
 import PaperBody from "src/components/Paper/PaperBody";
 import PaperHeader from "src/components/Paper/PaperHeader";
-import NavToBtn from "src/components/Buttons/NavToBtn";
+import NavToBtn from "src/components/Links/NavToLink";
 import styled from "@emotion/styled";
 
 type Props = {
