@@ -30,10 +30,11 @@ Otherwise, the folder structure follows common/best practices, such as grouping 
 - [ ] create functionality for additional poem booklets
   - [ ] use custom theme for different poem booklets
 
-### Tests
+### Test
 
 - [ ] add tests
 
 #### Bugs
 
 - [ ] fidgety scroll spy
+- [ ] remove all `any` types
