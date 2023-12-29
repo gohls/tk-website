@@ -1,6 +1,6 @@
 import React from "react";
 import { poems } from "src/assets/text/poems";
-import PostCard from "src/pages/Poem/PoemList/PoemCard";
+import PostCard from "src/pages/Home/PoemList/PoemCard";
 
 type Props = {};
 

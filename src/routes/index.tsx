@@ -1,20 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 import About from "src/pages/About";
-import PoemDetail from "src/pages/Detail";
+import Detail from "src/pages/Detail";
 import PageError from "src/pages/Error";
-import Poem from "src/pages/Poem";
+import Home from "src/pages/Home";
 import { routerType } from "src/types";
 
 const pages: routerType[] = [
   {
-    title: "poem",
+    title: "home",
     path: "",
-    element: <Poem />,
+    element: <Home />,
   },
   {
     title: "poem",
     path: ":poemId",
-    element: <PoemDetail />,
+    element: <Detail />,
   },
   {
     title: "about",
