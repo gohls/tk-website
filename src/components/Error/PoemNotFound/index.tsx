@@ -4,7 +4,7 @@ import { Emoji } from "src/components/Emoji";
 
 type Props = {};
 
-const Error: React.FC<Props> = () => {
+const PoemError: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="wrapper">
@@ -13,13 +13,13 @@ const Error: React.FC<Props> = () => {
           <Emoji>🤔</Emoji>
           <div>4</div>
         </div>
-        <div className="text">Page not found</div>
+        <div className="text">Poem not found</div>
       </div>
     </StyledWrapper>
   );
 };
 
-export default Error;
+export default PoemError;
 
 const StyledWrapper = styled.div`
   margin: 0 auto;

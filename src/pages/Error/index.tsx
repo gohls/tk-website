@@ -1,12 +1,10 @@
-import styled from "@emotion/styled";
 import React from "react";
-import { Emoji } from "src/components/Emoji";
-import Error from "src/components/Error";
+import PoemError from "src/components/Error/PoemNotFound";
 
 type Props = {};
 
-const PageError: React.FC<Props> = () => {
-  return <Error />;
+const Error: React.FC<Props> = () => {
+  return <PoemError />;
 };
 
-export default PageError;
+export default Error;

@@ -1,8 +1,8 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useRouteError } from "react-router-dom";
+import Home from "src/pages/Home";
 import About from "src/pages/About";
 import Detail from "src/pages/Detail";
-import PageError from "src/pages/Error";
-import Home from "src/pages/Home";
+import Error from "src/pages/Error";
 import { routerType } from "src/types";
 
 const pages: routerType[] = [
@@ -23,15 +23,17 @@ const pages: routerType[] = [
   },
   {
     path: "*",
-    element: <PageError />,
+    element: <Error />,
     title: "error",
   },
 ];
 
 const Router = () => {
-  const pageRoutes = pages.map(({ path, title, element }: routerType) => {
-    return <Route key={title} path={`/${path}`} element={element} />;
-  });
+  const pageRoutes = pages.map(
+    ({ path, title, element, error }: routerType) => {
+      return <Route key={title} path={`/${path}`} element={element} />;
+    }
+  );
 
   return <Routes>{pageRoutes}</Routes>;
 };

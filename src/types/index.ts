@@ -3,6 +3,7 @@ export interface routerType {
   title: string;
   path: string;
   element: any;
+  error?: any;
 }
 
 export type TPoem = {
