@@ -8,9 +8,11 @@ _It, furthermore, serves as a showcase for my endeavors in the realm of software
 
 ## 👨🏼‍💻 Dev Notes
 
+Some parts of the project may not adhere strictly to best practices or may seem over-engineered. These deviations are intentional, either for the sake of simplicity or as part of a deliberate learning practice. For example, combining `frontend` and `backend` under the same project may pose CORS or security issues. However, this amalgamation is intentional for learning purposes. In a real-world setting, these components could be easily separated.
+
 ## 📁 Folder Structure
 
-The parent folders are `frontend` and `backend`.
+The project is organized into two main parent folders: `frontend` and `backend`.
 
 ### Frontend
 
