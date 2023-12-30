@@ -8,17 +8,21 @@ _It, furthermore, serves as a showcase for my endeavors in the realm of software
 
 ## 👨🏼‍💻 Dev Notes
 
-This website is built using [React](https://react.dev/), while [Notion](https://tom-kuhn-poetry.notion.site/tom-kuhn-poetry/579da44c286942dba67c8c8d5ca0390b?v=7cb5edff85794e2791b91a716187cba4) serves as the backend. (WIP)
-
-React is one of my favorite frameworks to use on the frontend. Usally I use it in combination with [MUI](https://mui.com/) for styling, but here I am using [Emotion](https://emotion.sh/), which I am finding pretty straight forward and very nice to use.
-
-As for the backend, it's still currently work in progress, but I'm going to employ Notion, paired with [notion-api-worker](https://github.com/splitbee/notion-api-worker).
-
 ## 📁 Folder Structure
 
-The folder structure draws inspiration from certain conventions employed in Next.js, exemplified by the presence of folders like `routes`, `layout`, and `pages`. These conventions enhance code readability, maintainability, and overall organization, especially as the project grows.
+The parent folders are `frontend` and `backend`.
+
+### Frontend
+
+The frontent was built using [React](https://react.dev/). React is one of my favorite frameworks to use on the frontend. Usally I use it in combination with [MUI](https://mui.com/) for styling, but here I am using [Emotion](https://emotion.sh/), which I am finding pretty straight forward and very nice to use.
+
+This folder structure draws inspiration from certain conventions employed in [Next.js](https://nextjs.org/), exemplified by the presence of folders like `routes`, `layout`, and `pages`. These conventions enhance code readability, maintainability, and overall organization, especially as the project grows.
 
 Otherwise, the folder structure follows common/best practices, such as grouping `components`, `apis`, `utils`, etc.
+
+### Backend
+
+The backend is still work in progress, but I'm going to use [Flask](https://flask.palletsprojects.com/en/3.0.x/) together with [Ariadne](https://ariadnegraphql.org/).
 
 ## ☑️ TODO
 
