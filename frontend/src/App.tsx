@@ -1,5 +1,5 @@
 import Header from "./layouts/Header";
-import Main from "./layouts/Main";
+import { Main as MainLayout } from "./layouts/Main";
 import { ThemeProvider } from "./layouts/ThemeProvider";
 import AppRouter from "./routes";
 import { BrowserRouter } from "react-router-dom";
@@ -9,9 +9,9 @@ function App() {
     <BrowserRouter>
       <ThemeProvider>
         <Header fullWidth={false} />
-        <Main>
+        <MainLayout>
           <AppRouter />
-        </Main>
+        </MainLayout>
       </ThemeProvider>
     </BrowserRouter>
   );

@@ -5,11 +5,9 @@ type Props = {
   children: ReactNode;
 };
 
-const Main = ({ children }: Props) => {
+export const Main = ({ children }: Props) => {
   return <StyledMain>{children}</StyledMain>;
 };
-
-export default Main;
 
 const StyledMain = styled.main`
   margin: 0 auto;
