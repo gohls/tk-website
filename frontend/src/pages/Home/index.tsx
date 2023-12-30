@@ -11,16 +11,6 @@ export const HEADER_HEIGHT = 73;
 type Props = {};
 
 const Home: React.FC<Props> = () => {
-  // const data = await fetch(
-  //   "https://notion-api.splitbee.io/v1/page/<NOTION_PAGE_ID>"
-  // ).then(res => res.json());
-
-  // return {
-  //   props: {
-  //     blockMap: data
-  //   }
-  // };
-
   return (
     <StyledWrapper>
       <div className="lt">
