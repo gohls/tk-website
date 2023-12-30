@@ -1,4 +1,4 @@
-import { formatDate } from "src/utils";
+import { formatDate } from "src/libs/utils";
 import React from "react";
 import styled from "@emotion/styled";
 

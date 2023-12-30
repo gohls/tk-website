@@ -14,8 +14,8 @@ type Props = {
 
 const PoemDetail: React.FC<Props> = ({ slug }) => {
   const data = poems;
-  const idx = data.findIndex((post) => post.slug === slug);
   // findIndex returns -1 if not found
+  const idx = data.findIndex((post) => post.slug === slug);
   const noPoem = idx === -1;
 
   return (

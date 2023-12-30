@@ -1,4 +1,4 @@
-import { formatDate } from "src/utils";
+import { formatDate } from "src/libs/utils";
 import { TPoem } from "src/types";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
