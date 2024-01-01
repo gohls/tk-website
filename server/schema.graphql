@@ -1,0 +1,25 @@
+schema {
+    query: Query
+}
+
+type Booklet {
+    id: ID
+    title: String!
+    date: date
+    author: String
+    publishData: date
+    poems: [Poem]
+}
+
+type Poem {
+  id: ID
+  title: 
+  author: String!
+  date: 
+  poem: [String]
+}
+
+type Query {
+    listPoems: PoemsResult!
+    getPoem(id: ID!): PoemResult!
+}
