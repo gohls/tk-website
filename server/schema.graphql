@@ -7,19 +7,38 @@ type Booklet {
     title: String!
     date: date
     author: String
-    publishData: date
+    published: date
     poems: [Poem]
 }
 
 type Poem {
-  id: ID
-  title: 
-  author: String!
-  date: 
-  poem: [String]
+    id: ID
+    title: 
+    author: String!
+    date: 
+    poem: [String]
+}
+
+type BookletResult {
+    success: Boolean!
+    errors: [String]
+    data: Booklet
+}
+
+type PoemResult {
+    success: Boolean!
+    errors: [String]
+    data: Poem
+}
+
+type PoemsResult {
+    success: Boolean!
+    errors: [String]
+    data: [Poem]
 }
 
 type Query {
+    getBooklet(id: ID!) BookletResult!
     listPoems: PoemsResult!
     getPoem(id: ID!): PoemResult!
 }
