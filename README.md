@@ -12,9 +12,9 @@ Some parts of the project may not adhere strictly to best practices or may seem 
 
 ## 📁 Folder Structure
 
-The project is organized into two main parent folders: `frontend` and `backend`.
+The project is organized into two main parent folders: `client` and `server`.
 
-### Frontend
+### Client
 
 The frontent was built using [React](https://react.dev/). React is one of my favorite frameworks to use on the frontend. Usally I use it in combination with [MUI](https://mui.com/) for styling, but here I am using [Emotion](https://emotion.sh/), which I am finding pretty straight forward and very nice to use.
 
@@ -22,7 +22,7 @@ This folder structure draws inspiration from certain conventions employed in [Ne
 
 Otherwise, the folder structure follows common/best practices, such as grouping `components`, `apis`, `utils`, etc.
 
-### Backend
+### Server
 
 The backend is still work in progress, but I'm going to use [Flask](https://flask.palletsprojects.com/en/3.0.x/) together with [Ariadne](https://ariadnegraphql.org/).
 
