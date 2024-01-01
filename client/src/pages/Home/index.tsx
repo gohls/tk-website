@@ -5,6 +5,8 @@ import MobileProfileCard from "./MobileProfileCard";
 import ProfileCard from "./ProfileCard";
 import ContactCard from "./ContactCard";
 import PoemList from "./PoemList";
+import { request, gql } from "graphql-request";
+import { useQuery } from "react-query";
 
 export const HEADER_HEIGHT = 73;
 
