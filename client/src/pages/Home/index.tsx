@@ -24,13 +24,13 @@ const POEM_QUERY = gql`
 type Props = {};
 
 const Home: React.FC<Props> = () => {
-  const { data, isLoading, error } = useQuery("poems", () => {
-    return request(endpoint, POEM_QUERY);
-  });
+  // const { data, isLoading, error } = useQuery("poems", () => {
+  //   return request(endpoint, POEM_QUERY);
+  // });
 
-  if (data) {
-    console.log(data);
-  }
+  // if (data) {
+  //   console.log(data);
+  // }
 
   return (
     <StyledWrapper>
