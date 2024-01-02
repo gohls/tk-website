@@ -10,9 +10,28 @@ import { useQuery } from "react-query";
 
 export const HEADER_HEIGHT = 73;
 
+const endpoint = "/graphql";
+const POEM_QUERY = gql`
+  {
+    poems {
+      title
+      author
+      poem
+    }
+  }
+`;
+
 type Props = {};
 
 const Home: React.FC<Props> = () => {
+  const { data, isLoading, error } = useQuery("poems", () => {
+    return request(endpoint, POEM_QUERY);
+  });
+
+  if (data) {
+    console.log(data);
+  }
+
   return (
     <StyledWrapper>
       <div className="lt">
