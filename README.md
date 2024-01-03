@@ -31,7 +31,7 @@ The backend is still work in progress, but I'm going to use [Flask](https://flas
 ### Features
 
 - [ ] implement backend
-- [ ] create `preview` environments
+- [ ] create `preview` environment
 - [ ] implement comment section for poems
 - [ ] create functionality for additional poem booklets
   - [ ] use custom theme for different poem booklets
