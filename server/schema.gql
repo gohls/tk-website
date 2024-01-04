@@ -2,6 +2,11 @@ type Query {
   poems: [Poem]
 }
 
+type Booklet {
+  title: String!
+  publishedDate: Date
+}
+
 type Poem {
   title: String!
   author: String!
